@@ -1,46 +1,26 @@
 # Yaroslav Denisenko
 
-Senior Frontend / Fullstack Engineer with 7+ years building web products at scale. I work mostly in **TypeScript**, **React** and **Node.js**, with a soft spot for **Rust** and developer tooling.
+Senior engineer — **TypeScript / React** in production (under NDA), **Rust** and developer tooling in public.
 
-📍 Based in Tbilisi, Georgia · Open to relocation · Open to senior IC roles in product engineering or developer tooling
+📍 Tbilisi, Georgia · Open to relocation · Senior IC roles
 
----
+*Production frontend work is under NDA — 9M+ and 100M+ MAU products. Details on [LinkedIn](https://www.linkedin.com/in/yaroslav-denisenko/).*
 
-## What I've shipped
+## Pinned work
 
-- Led frontend for products serving **9M+ and 100M+ users**
-- Built B2B AdTech dashboards processing **2.3M data points/day** with sub-second response time
-- Reduced presentation rendering time by **33.6%** through Canvas API optimization
-- Cut deployment time from **3 hours to 25 minutes** by introducing CI/CD
-- Reduced asset loading by **80%** through caching and preloading at a 100M+ MAU social platform
-- Integrated modern React into a **15-year-old PHP codebase** without breaking changes
-- Mentored **20+ developers** at a major bank, taught **150+ students** React/JS as a bootcamp instructor
+- **[yoptascript-rs](https://github.com/IxxyDev/yoptascript-rs)** — `Rust` · Four-crate Cargo workspace implementing a full compiler frontend from scratch: lexer, recursive-descent parser, AST, tree-walking interpreter. Built alongside my Biome contributions — Biome is a large mature JS/TS parser/linter in Rust, so I wanted a small from-scratch counterpart to understand each layer end-to-end without ECMAScript's full complexity.
 
-## What I'm working on
+- **[financial-rust](https://github.com/IxxyDev/financial-rust)** — `Rust` · Multi-format financial transaction parser (CSV ↔ text ↔ custom binary). Library + two CLIs in a Cargo workspace, designed around `Read`/`Write` traits with a magic-numbered, version-tagged binary format.
 
-- 🦀 Contributing to [Biome](https://github.com/biomejs/biome) — Rust-based linter/formatter for the JS/TS ecosystem
-- 🔬 Language implementation in Rust — see [`yoptascript-rs`](https://github.com/IxxyDev/yoptascript-rs): lexer, parser, AST, tree-walking interpreter across a four-crate Cargo workspace
-- 🛠️ Various dev-tool / performance side projects (V8 profiler, format parsers, backend experiments)
+- **[v8-simple-profiler](https://github.com/IxxyDev/v8-simple-profiler)** — `JavaScript` · V8 deoptimization profiler comparing monomorphic vs polymorphic code paths. Uses V8 intrinsics for optimization status and Welch-style statistics for honest measurement.
 
-## Tech I work with
+- **[task-tracker-elysia](https://github.com/IxxyDev/task-tracker-elysia)** — `TypeScript` · Task API on Bun + Elysia with strict Clean Architecture / DDD layering. Drizzle ORM, Valibot validation, `Result` discriminated unions, scheduled worker for due-date notifications.
 
-**Frontend** — TypeScript, React, Next.js, Redux, MobX, Effector, Canvas API, Tailwind, Webpack, Vite
-**Backend** — Node.js, NestJS, PostgreSQL, Docker, GitHub Actions, Python
-**Other** — Rust, Go, Bun, Elysia
-**Testing** — Jest, Vitest, React Testing Library, Playwright
+## What I'm exploring
 
-## Selected projects
+- 🦀 Contributing to [Biome](https://github.com/biomejs/biome) — Rust-based JS/TS/HTML linter & formatter. Recent merged work on HTML accessibility rules: ported [`noAriaUnsupportedElements`](https://github.com/biomejs/biome/pull/9491) and added [`noRedundantRoles`](https://github.com/biomejs/biome/pull/9276).
+- Language implementation, dev tooling, and performance profiling — see pinned repos.
 
-- **[v8-simple-profiler](https://github.com/IxxyDev/v8-simple-profiler)** — V8 deoptimization profiler comparing monomorphic vs polymorphic JS code paths, with statistical analysis and multiple report formats.
-- **[yoptascript-rs](https://github.com/IxxyDev/yoptascript-rs)** — Rust reimplementation of the YoptaScript joke language: lexer, parser, AST, tree-walking interpreter, four-crate Cargo workspace.
-- **[financial-rust](https://github.com/IxxyDev/financial-rust)** — Multi-format financial transaction parser library in Rust (CSV ↔ binary ↔ text), plus CLI tools for conversion and comparison.
-- **[task-tracker-elysia](https://github.com/IxxyDev/task-tracker-elysia)** — Task management API in Bun + Elysia + Drizzle, structured with Clean Architecture / DDD layering.
+## Contact
 
-## Education
-
-**MSc, Mathematics & Computer Science** — Moscow Institute of Physics and Technology (MIPT), 2019
-
-## Get in touch
-
-- 📧 [denisenkoforwork@gmail.com](mailto:denisenkoforwork@gmail.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/yaroslav-denisenko/)
+📧 [denisenkoforwork@gmail.com](mailto:denisenkoforwork@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/yaroslav-denisenko/)
