@@ -18,7 +18,10 @@ I build high-performance UI and Canvas-based rendering — shipped editors, real
 
 ## What I'm exploring
 
-- 🦀 Contributing to [Biome](https://github.com/biomejs/biome) — Rust-based JS/TS/HTML linter & formatter. Recent merged work on HTML accessibility rules: ported [`noAriaUnsupportedElements`](https://github.com/biomejs/biome/pull/9491) and added [`noRedundantRoles`](https://github.com/biomejs/biome/pull/9276).
+- 🦀 Contributing to [Biome](https://github.com/biomejs/biome) — Rust-based JS/TS linter & formatter. Recent work in its **type-inference engine**:
+  - Fixed overloaded-function resolution ([#10585](https://github.com/biomejs/biome/pull/10585) + [#10586](https://github.com/biomejs/biome/pull/10586)) — models TypeScript's overload sets in the module graph and selects the matching signature at the call site, so `noFloatingPromises` stops misfiring on overloaded calls.
+  - Expanded [`noUnnecessaryConditions`](https://github.com/biomejs/biome/pull/10108) to flag type-aware dead conditions: nullish/optional chaining on non-nullable types, always-falsy negations, unreachable `switch` cases.
+  - Earlier: ported [`noAriaUnsupportedElements`](https://github.com/biomejs/biome/pull/9491) and added [`noRedundantRoles`](https://github.com/biomejs/biome/pull/9276) for HTML a11y.
 
 ## Contact
 
