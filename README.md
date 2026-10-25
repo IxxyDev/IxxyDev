@@ -6,23 +6,22 @@ Senior engineer — **TypeScript / React** in production, **Rust** and developer
 
 I build high-performance UI and Canvas-based rendering — shipped editors, real-time analytics dashboards, and banking tools across AdTech, enterprise software, and EdTech. Full work history on [LinkedIn](https://www.linkedin.com/in/yaroslav-denisenko/).
 
-## Pinned work
+## Open source
 
-- **[yoptascript-rs](https://github.com/IxxyDev/yoptascript-rs)** — A full compiler frontend from scratch in Rust: lexer, recursive-descent parser, AST, tree-walking interpreter. Built alongside my Biome contributions — Biome is a large, mature JS/TS parser/linter, so I wanted a small from-scratch counterpart to understand each layer end-to-end.
+🦀 Contributor to [Biome](https://github.com/biomejs/biome) — Rust-based JS/TS linter & formatter. Merged work in its **type-inference engine**:
 
-- **[financial-rust](https://github.com/IxxyDev/financial-rust)** — Multi-format financial transaction parser (CSV ↔ text ↔ custom binary), with a library and two CLIs designed around `Read`/`Write` traits and a versioned binary format.
+- Fixed overloaded-function resolution ([#10585](https://github.com/biomejs/biome/pull/10585) + [#10586](https://github.com/biomejs/biome/pull/10586)) — models TypeScript's overload sets in the module graph and selects the matching signature at the call site, so `noFloatingPromises` stops misfiring on overloaded calls.
+- Expanded [`noUnnecessaryConditions`](https://github.com/biomejs/biome/pull/10108) to flag type-aware dead conditions: nullish/optional chaining on non-nullable types, always-falsy negations, unreachable `switch` cases.
+- Earlier: ported [`noAriaUnsupportedElements`](https://github.com/biomejs/biome/pull/9491) and added [`noRedundantRoles`](https://github.com/biomejs/biome/pull/9276) for HTML a11y.
 
-- **[v8-simple-profiler](https://github.com/IxxyDev/v8-simple-profiler)** — A profiler that measures how V8 deoptimizes monomorphic vs polymorphic code paths, using V8 intrinsics and proper statistics for honest measurement.
+## Projects
 
-- **[task-tracker-elysia](https://github.com/IxxyDev/task-tracker-elysia)** — A task API on Bun + Elysia with strict Clean Architecture / DDD layering, typed error handling via `Result` unions, and a scheduled worker for due-date notifications.
+- **[yoptascript-rs](https://github.com/IxxyDev/yoptascript-rs)** — A JS-like language implemented from scratch in Rust: lexer, parser, tree-walking interpreter and a bytecode VM that a conformance suite keeps byte-for-byte in sync, plus LSP, DAP, formatter, linter, a VS Code extension and a [WASM playground](https://ixxydev.github.io/yoptascript-rs/).
 
-## What I'm exploring
+- **[cachelens](https://github.com/IxxyDev/cachelens)** — Prompt-cache economics for LLM agent pipelines: cost per step, cache hit rate, byte-level root cause for each cache miss, and a CI gate that fails the build when the numbers regress.
 
-- 🦀 Contributing to [Biome](https://github.com/biomejs/biome) — Rust-based JS/TS linter & formatter. Recent work in its **type-inference engine**:
-  - Fixed overloaded-function resolution ([#10585](https://github.com/biomejs/biome/pull/10585) + [#10586](https://github.com/biomejs/biome/pull/10586)) — models TypeScript's overload sets in the module graph and selects the matching signature at the call site, so `noFloatingPromises` stops misfiring on overloaded calls.
-  - Expanded [`noUnnecessaryConditions`](https://github.com/biomejs/biome/pull/10108) to flag type-aware dead conditions: nullish/optional chaining on non-nullable types, always-falsy negations, unreachable `switch` cases.
-  - Earlier: ported [`noAriaUnsupportedElements`](https://github.com/biomejs/biome/pull/9491) and added [`noRedundantRoles`](https://github.com/biomejs/biome/pull/9276) for HTML a11y.
+- **[v8-simple-profiler](https://github.com/IxxyDev/v8-simple-profiler)** — Measures how V8 treats monomorphic vs polymorphic code paths: warm-up, median/p95/p99 with outlier handling, a Welch t-statistic for the comparison, and the optimizer's actual decisions read via V8 intrinsics.
 
 ## Contact
 
-📧 [denisenkoforwork@gmail.com](mailto:denisenkoforwork@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/yaroslav-denisenko/)
+📧 [denisenkoforwork@gmail.com](mailto:denisenkoforwork@gmail.com)
